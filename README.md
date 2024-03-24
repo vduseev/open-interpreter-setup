@@ -13,7 +13,23 @@
 1. Run the installation script
 
    ```shell
-   ~/.interpreter/install.sh
+   $ ~/.interpreter/install.sh
+
+   This script is going to create 2 symlinks for interpreter in /usr/local/bin:
+
+   interpreter
+   and a shorthand: i
+
+   Creating symlinks there allows for interpreter to be called from any directory.
+   However, creating symlinks in /usr/local/bin/ requires sudo permissions.
+
+   The script will now ask for your password. Please press Ctrl+C to safely stop
+   this script from proceeding any further if you are not comfortable with this
+   operation. You can verify the source code of this script at:
+   https://github.com/vduseev/open-interpreter-install
+
+   Password:
+   Symlinks were installed!
    ```
 
    This script will perform the following steps:
@@ -34,6 +50,16 @@
    You can invoke open-interpreter from any directory:
 
    ```shell
-   interpreter
+   $ interpreter
+
+   ▌ Model set to gpt-4
+
+   Open Interpreter will require approval before running code.
+
+   Use interpreter -y to bypass this.
+
+   Press CTRL-C to exit.
+
+   >
    ```
 
