@@ -1,0 +1,7 @@
+# Python
+.venv/
+.python-version
+
+# Secrets
+keys
+
